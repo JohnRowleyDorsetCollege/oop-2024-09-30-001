@@ -5,6 +5,9 @@ Console.WriteLine("Hello, World!");
 
 List<string> listOfStrings = new List<string>() { "one", "two", "three" };
 List<int> numbers = new List<int> { 1, 2, 3 };
+List<int> listOfMoreNumbers = new List<int> { 5,6,7,8,9 };
+
+numbers.AddRange(listOfMoreNumbers);
 
 
 //output each of the strings using console writeline
@@ -53,24 +56,14 @@ foreach (Dog currentDog in dogs)
 
 
 
+List<Animal> animals = new List<Animal>()
+{
+     new Cat() { Name = "Fido6", Age = 7 },
+     new Dog() { Name = "Woofwoof", Age = 17 }
 
 
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-List<Animal> animals = new List<Animal>();
 animals.AddRange(catList);
 animals.AddRange(dogs);
 
